@@ -1,5 +1,5 @@
 
-# node-react todo
+# // TODO
  - [ ] Todo App (React)
  - [ ] Landing page (React)
  - [ ] Shopping cart (Node+MongoDB, React)
