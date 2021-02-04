@@ -1,0 +1,14 @@
+{
+  "title": "Landing page demo",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatum quos nemo eius cumque, rerum sit repudiandae! Quaerat nesciunt laboriosam dolorem magni nemo maiores deserunt officia iusto tenetur, autem, at ea? Velit aliquid accusamus necessitatibus reprehenderit odit at quos soluta qui quibusdam dicta consequuntur optio illum culpa sint!",
+  "buttons": [
+    {
+      "type": "dark",
+      "text": "Explore"
+    },
+    {
+      "type": "light",
+      "text": "Learn more"
+    }
+  ]
+}
