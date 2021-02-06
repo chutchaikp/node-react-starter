@@ -1,54 +1,49 @@
-.App {
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.column {
-  position: relative;
-  width: 50%;
-  padding: 1rem;
-  background-color: #ddd;
-  border: 1px solid aqua;
-  min-height: 100vh;
-}
-/* .App {
-  text-align: center;
+.header {
+  border: 2px solid aqua;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.header-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.content {
+  padding: 1rem 3rem;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
-} */
+.asyncButton {
+  position: relative;
+}
+
+.asyncButton:after {
+  content: '';
+  background-color: rgba(26, 123, 38, 0.15);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: width 1s linear, opacity 0.5s ease 1s;
+}
+
+.asyncButton:active:after {
+  width: 0%;
+  opacity: 1;
+  transition: 0s;
+}
