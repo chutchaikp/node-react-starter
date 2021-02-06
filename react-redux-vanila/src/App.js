@@ -1,5 +1,6 @@
-import { combineReducers, createStore } from '@reduxjs/toolkit';
+// import { combineReducers, createStore } from '@reduxjs/toolkit';
 import React, { useEffect, useState } from 'react';
+import { combineReducers, createStore, } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import './App.css';
 
