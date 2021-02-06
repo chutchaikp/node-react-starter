@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] React Redux Vanila demo
+- [x] React Redux Vanila demo
 - [ ] React Redux RTK demo
 
 - [ ] React Router demo
