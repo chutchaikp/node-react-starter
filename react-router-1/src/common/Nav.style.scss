@@ -1,0 +1,28 @@
+.nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	
+	height: 5rem;
+	padding: 0.2rem 20rem;
+	// width: 1200px;
+	margin-left: auto;
+	margin-right: auto;	
+	box-shadow: 0px 1px 5px 0px rgba(100,100,100,.3);
+	
+}
+
+.nav-link {
+	list-style: none;
+	display: flex;
+	flex-direction: row;	
+}
+.nav-link>a {
+	padding: 1rem;
+	text-decoration: none;
+	color: #333;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
