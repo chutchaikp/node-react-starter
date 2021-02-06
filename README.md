@@ -1,10 +1,9 @@
 # TODO
 
 - [x] React Redux Vanila demo
-- [ ] React Redux RTK demo
+- [x] React Redux RTK demo
 
 - [ ] React Router demo
-
 - [ ] Node & MongoDb build a CRUD Rest Api demo
 - [ ] Node authenication with JWT
 - [ ] Blog
