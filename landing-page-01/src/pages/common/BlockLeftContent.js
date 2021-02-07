@@ -1,11 +1,8 @@
 import { Col, Row } from 'antd';
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-
 import { IconSvg } from './IconSvg';
-
 import * as S from './BlockLeftContent.style'
-
 
 const BlockLeftContent = ({ id, title, text, icon, buttons }) => {
 	return (

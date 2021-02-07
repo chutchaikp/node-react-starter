@@ -26,7 +26,6 @@ export default function Home() {
 			{/* Mission */}
 			<BlockLeftContent id="mission" title={mc.title} text={mc.text} icon={mc.icon} buttons={null} />
 
-
 			<ContactForm />
 
 		</div>

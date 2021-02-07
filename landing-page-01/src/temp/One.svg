@@ -1,0 +1,120 @@
+<svg class="svg-illustration svg-illustration--accelerate" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	viewBox="0 0 244 244">
+	<g class="animation-element" data-animation-shadow="" style="opacity: 1;">
+		<path class="svg-accelerate-st0"
+			d="M122.6,94c-1.7,0-3.3,0.4-4.8,1.1c-1.2,0.8-113.6,65-114.8,65.7s-2,1.7-2,2.7l0,0c0,1.1,0.8,2,2,2.7s113.6,64.9,114.8,65.6c3,1.5,6.6,1.5,9.6,0c1.2-0.7,113.6-64.9,114.8-65.6c1.2-0.7,2-1.7,2-2.7l0,0c0-1.1-0.8-2-2-2.7S128.6,95.9,127.4,95.2C125.9,94.4,124.3,94,122.6,94">
+		</path>
+	</g>
+	<g class="animation-element" data-animation-bottom="" style="transform: translateY(0px); opacity: 1;">
+		<path class="svg-accelerate-st1"
+			d="M244,115.9C244,115.9,244,116.1,244,115.9c0,0.1,0,0.1,0,0.2v8.3c-0.1,1.2-0.9,2.2-2,2.8c-1.2,0.7-113.9,65.4-115.2,66c-3,1.6-6.6,1.6-9.6,0c-1.2-0.7-113.9-65.4-115.2-66c-1.1-0.4-1.9-1.6-2-2.8V116l0,0l0,0v-0.6h0.1c0.3-1,1-1.8,1.9-2.2c1.2-0.7,113.9-66.4,115.2-67c3-1.6,6.6-1.6,9.6,0c1.2,0.7,113.9,66.4,115.2,67c0.9,0.4,1.6,1.2,1.9,2.2h0.1V115.9z">
+		</path>
+		<path class="svg-accelerate-st2"
+			d="M121.9,45.8c-1.7,0-3.3,0.4-4.8,1.1C115.8,47.7,3.2,112.6,2,113.3c-1.2,0.7-2,1.7-2,2.8l0,0c0,1.1,0.8,2.1,2,2.8s113.9,65.6,115.1,66.4c3,1.5,6.6,1.5,9.6,0c1.2-0.7,113.9-65.7,115.1-66.4s2-1.7,2-2.8l0,0c0-1.1-0.8-2.1-2-2.8S127.9,47.7,126.7,47C125.2,46.2,123.5,45.8,121.9,45.8">
+		</path>
+	</g>
+	<g class="animation-element" data-animation-top="" style="transform: translateY(0px); opacity: 1;">
+		<path class="svg-accelerate-st4"
+			d="M120,80.5L0,80.1c0,0,0,4,0,5.7l0,0c0.1,1.2,0.9,2.3,2,2.8c1.2,0.7,114,66.4,115.2,67.1c3,1.6,6.5,1.6,9.5,0c1.2-0.7,114-66.4,115.2-67.1c1.1-0.6,1.9-1.6,2-2.8l0,0C243.9,84.5,244,80.5,244,80.5">
+		</path>
+		<path class="svg-accelerate-st5"
+			d="M121.9,10c-1.7,0-3.3,0.4-4.8,1.1C115.8,11.9,3.2,76.8,2,77.5s-2,1.7-2,2.8l0,0c0,1.1,0.8,2.1,2,2.8c1.2,0.7,113.9,65.6,115.1,66.4c3,1.5,6.6,1.5,9.6,0c1.2-0.7,113.9-65.7,115.1-66.4c1.2-0.7,2-1.7,2-2.8l0,0c0-1.1-0.8-2.1-2-2.8S127.9,11.9,126.7,11.2C125.2,10.4,123.5,10,121.9,10">
+		</path>
+		<path class="svg-accelerate-st6"
+			d="M7.3,78.9c1-0.5,2.2-0.5,3.2,0c0.9,0.5,0.9,1.3,0,1.9c-1,0.5-2.2,0.5-3.2,0C6.4,80.2,6.4,79.4,7.3,78.9z M12.1,76.1c1-0.5,2.2-0.5,3.2,0c0.9,0.5,0.9,1.3,0,1.9c-1,0.5-2.2,0.5-3.2,0C11.2,77.4,11.2,76.6,12.1,76.1L12.1,76.1z M16.9,73.3c1-0.5,2.2-0.5,3.2,0c0.9,0.5,0.9,1.3,0,1.9c-1,0.5-2.2,0.5-3.2,0C16,74.7,16,73.8,16.9,73.3L16.9,73.3z">
+		</path>
+		<g>
+			<path class="svg-accelerate-st7"
+				d="M124.5,101.3l-6.9,4.1c-7.1-1.2-14.2-3.5-19.8-6.8C88.4,93.2,84,86.2,84.3,79.2c0-0.2,0-0.3,0-0.5s0-0.3,0-0.5s0-0.3,0-0.5s0-0.3,0-0.5s0-0.3,0-0.4s0-0.3,0-0.4s0-0.2,0-0.4c0-0.1,0-0.2,0-0.3c-0.1-6.9,4.4-13.8,13.5-19.1c18-10.4,47.2-10.3,65.4,0.2c5.6,3.2,9.5,7.1,11.6,11.2v4.1l-5.5,3.3c-2-3.5-7.1-8.6-13.4-12.3
+			c-14.1-8.1-38.1-7-52.6,1.3c-6.4,3.7-10,8.2-10.9,12.9c0.7,4.5,4.1,8.9,10.1,12.4c10.1,5.8,16.8,6.5,22,7.3L124.5,101.3L124.5,101.3z"></path>
+			<path class="svg-accelerate-st7"
+				d="M138.5,62.4L136,82.2c-0.5,0.9-1.3,1.6-2.1,2.1c-3.4,2-9.2,1.9-12.6-0.1c-1.8-1.1-2.5-2.4-2.5-3.8c0-0.9,0-1.4,0-4.6c0-1.3,0.5-2.4,1.9-3.4l0,0l17.8-15.1V62.4z">
+			</path>
+			<path class="svg-accelerate-st8"
+				d="M174.8,67.9l-5.6,3.2c-2-3.5-7.1-8.6-13.4-12.3c-14.1-8.1-38.1-7-52.6,1.3c-14.5,8.4-14.9,21.3-0.8,29.5c10.1,5.8,16.7,6.6,22,7.3l-6.9,4c-7.1-1.2-14.2-3.5-19.8-6.8c-18.1-10.4-17.9-27.3,0-37.7s47.2-10.3,65.4,0.2C168.8,59.9,172.7,63.8,174.8,67.9z M138.6,56.9L136,76.8c-0.5,0.9-1.3,1.6-2.1,2.1c-3.4,2-9.2,1.9-12.6-0.1c-3.2-1.8-3.4-4.8-0.6-6.7l0,0L138.6,56.9z">
+			</path>
+		</g>
+	</g>
+	<defs>
+		<linearGradient id="svg-gradient__gray-middle" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0" style="stop-color:#CAD1E0"></stop>
+			<stop offset="0.46" style="stop-color:#BEC5D8"></stop>
+			<stop offset="0.54" style="stop-color:#D4D9E6"></stop>
+			<stop offset="1" style="stop-color:#E4E7F0"></stop>
+		</linearGradient>
+		<linearGradient id="svg-gradient__gray-top-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0" style="stop-color:#99A1BE"></stop>
+			<stop offset="1" style="stop-color:#B3BACF"></stop>
+		</linearGradient>
+		<linearGradient id="svg-gradient__gray-shadow" x1="122.26" y1="-395.29" x2="122.26" y2="-520.94"
+			gradientTransform="matrix(1, 0, 0, -1, 0, -278)" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#13151e" stop-opacity="0"></stop>
+			<stop offset="1" stop-color="#131532"></stop>
+		</linearGradient>
+		<linearGradient id="svg-gradient__dark-top-dark" gradientUnits="userSpaceOnUse" x1="12" y1="419.9333" x2="232"
+			y2="419.9333" gradientTransform="matrix(1 0 0 1 0 -356)">
+			<stop offset="5.139655e-03" style="stop-color:#3F4B75"></stop>
+			<stop offset="1" style="stop-color:#636F99"></stop>
+		</linearGradient>
+		<linearGradient id="svg-gradient__dark-top-light" gradientUnits="userSpaceOnUse" x1="41.6969" y1="400.85"
+			x2="200.8531" y2="400.85" gradientTransform="matrix(1 0 0 1 0 -356)">
+			<stop offset="0" style="stop-color:#5B6791"></stop>
+			<stop offset="1" style="stop-color:#69759F"></stop>
+		</linearGradient>
+		<linearGradient id="svg-gradient__dark-middle" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0" stop-color="#373f6e"></stop>
+			<stop offset="1" stop-color="#5a6291"></stop>
+		</linearGradient>
+		<linearGradient id="svg-gradient__dark-middle-2" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0.01" stop-color="#353d6c"></stop>
+			<stop offset="1" stop-color="#575f8e"></stop>
+		</linearGradient>
+
+		<linearGradient id="bg_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-230.4403" x2="244" y2="-230.4403"
+			gradientTransform="matrix(1 0 0 -1 0 -112)">
+			<stop offset="0" style="stop-color:#373F6E"></stop>
+			<stop offset="1" style="stop-color:#5A6291"></stop>
+		</linearGradient>
+		<linearGradient id="Kształt_1_kopia_35_1_" gradientUnits="userSpaceOnUse" x1="0" y1="163.6875" x2="243.8"
+			y2="163.6875" gradientTransform="matrix(1 0 0 -1 0 244)">
+			<stop offset="5.139655e-03" style="stop-color:#3F4B75"></stop>
+			<stop offset="1" style="stop-color:#636F99"></stop>
+		</linearGradient>
+		<style type="text/css">
+			.svg-accelerate-st0 {
+				opacity: 8.000000e-02;
+				fill: url(#svg-gradient__gray-shadow);
+				enable-background: new;
+			}
+
+			.svg-accelerate-st1 {
+				fill: url(#svg-gradient__gray-middle);
+			}
+
+			.svg-accelerate-st2 {
+				fill: url(#svg-gradient__gray-top-dark);
+			}
+
+			.svg-accelerate-st4 {
+				fill: url(#svg-gradient__dark-middle);
+			}
+
+			.svg-accelerate-st5 {
+				fill: url(#svg-gradient__dark-top-dark);
+			}
+
+			.svg-accelerate-st6 {
+				opacity: 0.4;
+				enable-background: new;
+			}
+
+			.svg-accelerate-st7 {
+				fill: #D5D9E2;
+			}
+
+			.svg-accelerate-st8 {
+				fill: #FFFFFF;
+			}
+		</style>
+	</defs>
+</svg>
