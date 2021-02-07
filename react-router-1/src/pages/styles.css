@@ -14,6 +14,7 @@
 
 .wrapper ul {
   list-style: none;
+  margin: 2rem 4rem;
 }
 
 li {
@@ -34,5 +35,10 @@ li > a {
   font-weight: 500;
   color: #000;
   text-align: center;
+  margin: 1rem 5rem;
+}
+
+.body {
+  margin: 2rem 7rem;
 }
 /*# sourceMappingURL=styles.css.map */

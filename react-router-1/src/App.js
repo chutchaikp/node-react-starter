@@ -16,7 +16,7 @@ function App() {
 
         <Nav />
         <Switch>
-
+          <Route path="/" exact component={Home}></Route>
           <Route path="/home" component={Home}></Route>
           <Route path="/posts" component={Posts}></Route>
           <Route path="/post/:id" component={Post}></Route>
