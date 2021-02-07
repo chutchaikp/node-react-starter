@@ -1,25 +1,64 @@
-import React from 'react'
-
-import './Nav.style.css'
+import React, { useState } from 'react'
 import logo from '../logo.svg';
+import '../App.css'
 import { Link } from 'react-router-dom';
 
+import { Drawer } from 'antd'
+import { MenuOutlined } from '@ant-design/icons'
+import 'antd/dist/antd.css';
+
 export default function Nav() {
+	const [showDrawer, setShowDrawer] = useState(false);
 	return (
-		<div className="nav">
-			<div>
-				<img src={logo} className="App-logo" alt="logo" width="100" height="100" />
+		<div className="App-header-container">
+
+			<div className="App-header">
+
+				<div className="App-logo-container">
+					<div className="App-logo">
+						<img src={logo} alt="logo" width="80" height="80" />
+					</div>
+					<div className="App-title"> REACT NAVIGATION DEMO I </div>
+				</div>
+
+				<div>
+					<ul className="App-link">
+						<li>
+							<Link to="/" >Home</Link>
+						</li>
+						<li>
+							<Link to="/posts">Posts</Link>
+						</li>
+						<li>
+							<Link to="/about">About</Link>
+						</li>
+					</ul>
+					<div className="button-outlined">
+						<MenuOutlined size="32" onClick={() => setShowDrawer(true)} />
+						<Drawer closable={false} visible={showDrawer} onClose={() => setShowDrawer(false)}>
+							<NavMenu />
+						</Drawer>
+					</div>
+				</div>
 			</div>
-			<div>
-				<ul className="nav-link">
-					<Link to="/home">Home</Link>
-
-					<Link to="/posts">Posts</Link>
-
-					<Link to="/about" >About</Link>
-				</ul>
-			</div>
-
 		</div>
+
 	)
 }
+
+const NavMenu = () => {
+	return (
+		<ul className="menu-outlined" >
+			<li>
+				<Link to="/" >Home</Link>
+			</li>
+			<li>
+				<Link to="/posts">Posts</Link>
+			</li>
+			<li>
+				<Link to="/about">About</Link>
+			</li>
+		</ul>
+	);
+}
+

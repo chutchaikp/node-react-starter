@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-
-import './styles.css'
+import { LinkOutlined } from '@ant-design/icons';
 
 export default function Posts() {
 
@@ -15,19 +14,24 @@ export default function Posts() {
 		}
 		fetchPost();
 	}, []);
+
 	return (
 		<div className="container">
-			<div className="wrapper">
-				<div className="title">
-					JSON Placeholder Posts
-				</div>
 
-				<ul>
+			<div className="wrapper">
+				<h2 className="heading">
+					JSON Placeholder Posts
+				</h2>
+				{/* <div className="fancy-line">
+					<span></span>
+				</div> */}
+
+				<ul className="posts">
 					{posts.map((p) => {
 						return (
 							<li key={p.id}>
 								<Link to={`/post/${p.id}`} >
-									{p.title}
+									<ListTitle title={p.title} />
 								</Link>
 							</li>
 						);
@@ -36,4 +40,15 @@ export default function Posts() {
 			</div>
 		</div>
 	)
+}
+
+const ListTitle = ({ title }) => {
+	return (
+		<div class="list-title">
+			<div className="icon-style">
+				<LinkOutlined style={{ fontSize: '20px', color: '#fff' }} />
+			</div>
+			<p>{title}</p>
+		</div>
+	);
 }

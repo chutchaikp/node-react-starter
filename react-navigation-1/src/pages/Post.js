@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import './styles.css'
 
 export default function Post({ match }) {
 	const [post, setPost] = useState({});
@@ -23,8 +22,8 @@ export default function Post({ match }) {
 		<div className="container">
 			<div className="wrapper">
 
-				<div className="title">{post.title}</div>
-				<div className="body">{post.body}</div>
+				<div className="heading">{post.title}</div>
+				<div className="sub-heading">{post.body}</div>
 			</div>
 		</div>
 	)

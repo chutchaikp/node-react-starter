@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -13,7 +13,6 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-
         <Nav />
         <Switch>
           <Route path="/" exact component={Home}></Route>
