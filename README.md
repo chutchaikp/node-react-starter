@@ -3,7 +3,8 @@
 - [x] React Redux Vanila demo
 - [x] React Redux RTK demo
 
-- [ ] React Router demo
+- [ ] React Navigation demo
+
 - [ ] Node & MongoDb build a CRUD Rest Api demo
 - [ ] Node authenication with JWT
 - [ ] Blog
