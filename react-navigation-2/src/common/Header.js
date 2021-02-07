@@ -21,7 +21,6 @@ function Header() {
 					<div className="App-title"> REACT NAVIGATION DEMO II </div>
 				</div>
 
-
 				<div>
 					<ul className="App-link">
 						<li>

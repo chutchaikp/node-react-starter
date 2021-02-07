@@ -13,7 +13,7 @@ export const Routes = [
 		component: "Posts"
 	},
 	{
-		path: ["/post", "post"],
+		path: ["/post/:id", "post"],
 		component: "Post"
 	},
 	{

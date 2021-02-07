@@ -44,7 +44,7 @@ export default function Posts() {
 
 const ListTitle = ({ title }) => {
 	return (
-		<div class="list-title">
+		<div className="list-title">
 			<div className="icon-style">
 				<LinkOutlined style={{ fontSize: '20px', color: '#fff' }} />
 			</div>
