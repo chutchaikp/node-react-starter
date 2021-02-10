@@ -9,13 +9,28 @@ export const namesSlice = createSlice({
 			return [...state, action.payload];
 		},
 		deleteName: (state, action) => {
-			return state.filter((n) => {
-				return n !== action.payload;
+			const res = state.filter((u) => {
+				return u.selected === false
 			});
+			return res;
+		},
+		updateName: (state, action) => {
+			try {
+				debugger;
+				const pl = action.payload;
+				state.map((n, idx) => {
+					if (idx === pl.index) {
+						n.selected = pl.selected;
+					}
+					return n;
+				});
+			} catch (error) {
+				debugger;
+			}
 		},
 		loadDataAsync: (state, action) => {
 			const data = action.payload.map((n) => {
-				return n.name;
+				return { value: n.name, selected: false };
 			});
 			return [...state, ...data];
 		},
@@ -26,7 +41,7 @@ export const namesSlice = createSlice({
 });
 
 // export to ui
-export const { addName, deleteName, loadDataAsync, clearNames, } = namesSlice.actions;
+export const { addName, deleteName, loadDataAsync, clearNames, updateName, } = namesSlice.actions;
 export const allName = state => state.names;
 export const loadAsync = () => async dispatch => {
 	try {

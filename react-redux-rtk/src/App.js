@@ -1,23 +1,24 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
 import { Names } from './features/names/Names';
-import './App.css';
 import Header from './components/Header';
+import './App.css';
 
 function App() {
   return (
-    <div className="container">
-      <div className="header">
-        <Header />
+    <>
+      <Header />
+
+      <div className="container">
+        <div className="wrapper">
+          <div className="two-column-app">
+            <Counter />
+            <Names />
+          </div>
+        </div>
       </div>
 
-      <div className="content">
-        <Counter />
-        <hr />
-        <Names />
-      </div>
-
-    </div>
+    </>
   );
 }
 
