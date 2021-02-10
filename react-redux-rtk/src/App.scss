@@ -235,7 +235,7 @@ body {
 // Counter style
 .counter {
 	font-weight: 300;
-	font-size: 3rem;
+	font-size: 1.5rem;
 }
 
 .counter-button {
@@ -267,31 +267,31 @@ $secondary: #38ef7d;
 $white: #fff;
 $gray: #9b9b9b;
 
-.names-input {
-  font-family: inherit;
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid $gray;
-  outline: 0;
-  font-size: 1.3rem;  
-	padding-bottom: 1rem;
-	margin-bottom: 1rem;
-  background: transparent;
+.text-input {
+  // font-family: inherit;
+  // width: 100%;
+  // border: 0;
+  // border-bottom: 1px solid $gray;
+  // outline: 0;
+  font-size: 1.2rem;  
+	// padding-bottom: 1rem;
+	// margin-bottom: 1rem;
+  // background: transparent;
   
-  &::placeholder {
-    color: transparent;
-  }
+  // &::placeholder {
+  //   color: transparent;
+  // }
 }
-.names-button {
-	font-size: 1rem;	
-	line-height: 13px;
-	border: 1px solid #6b52ae;
-	color: #6b52ae;
-	padding: 10px 25px;
-	display: inline-block;
-	background: transparent;
-	margin: 2px;
-}
+// .names-button {
+// 	font-size: 1rem;	
+// 	line-height: 13px;
+// 	border: 1px solid #6b52ae;
+// 	color: #6b52ae;
+// 	padding: 10px 25px;
+// 	display: inline-block;
+// 	background: transparent;
+// 	margin: 2px;
+// }
 .names-button:focus {
 	outline: none;
 }
@@ -299,4 +299,19 @@ button {
 	font-family: 'JetBrains Mono', sans-serif !important;
 	font-size: 1rem;
 	font-weight: 700 i !important;
+}
+
+.app-container {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f8f7f7;    
+  border: 1px solid #e8e6e6;
+}
+.todo-list {
+  list-style: none;
+  margin-left: -3rem;
+}
+.todo-finished {
+  text-decoration: line-through;
+  color: rgb(198, 197, 197);
 }

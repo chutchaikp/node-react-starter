@@ -11,18 +11,13 @@ export function Counter() {
   const dispatch = useDispatch();
 
   return (
-    // <div>
-    //   <h3>Counter</h3>
-    //   <p >{count}</p>
-    //   <button onClick={() => dispatch(increment())}>+</button>
-    //   <button onClick={() => dispatch(decrement())}>-</button>
-    // </div>
-    <div>
+
+    <div className="app-container">
 
       <h3 className="title">Counter</h3>
       <p className="counter">{count}</p>
-      <button className="counter-button" onClick={() => dispatch(increment())} >+</button>
-      <button className="counter-button" onClick={() => dispatch(decrement())} >-</button>
+      <button onClick={() => dispatch(increment())} >+</button>
+      <button onClick={() => dispatch(decrement())} >-</button>
 
     </div>
   );

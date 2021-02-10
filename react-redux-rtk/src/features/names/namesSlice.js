@@ -14,19 +14,17 @@ export const namesSlice = createSlice({
 			});
 			return res;
 		},
-		updateName: (state, action) => {
-			try {
-				debugger;
-				const pl = action.payload;
-				state.map((n, idx) => {
-					if (idx === pl.index) {
-						n.selected = pl.selected;
-					}
-					return n;
-				});
-			} catch (error) {
-				debugger;
-			}
+		selectName: (state, action) => {
+			const pl = action.payload;
+			state.map((n, idx) => {
+				if (idx === pl.index) {
+					n.selected = pl.selected;
+				}
+				return n;
+			});
+		},
+		selectAllName: (state, action) => {
+			state.map((n) => n.selected = true);
 		},
 		loadDataAsync: (state, action) => {
 			const data = action.payload.map((n) => {
@@ -41,7 +39,7 @@ export const namesSlice = createSlice({
 });
 
 // export to ui
-export const { addName, deleteName, loadDataAsync, clearNames, updateName, } = namesSlice.actions;
+export const { addName, deleteName, loadDataAsync, clearNames, selectName, selectAllName, } = namesSlice.actions;
 export const allName = state => state.names;
 export const loadAsync = () => async dispatch => {
 	try {

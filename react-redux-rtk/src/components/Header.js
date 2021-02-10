@@ -2,10 +2,12 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectCount } from '../features/counter/counterSlice';
 import { allName } from '../features/names/namesSlice'
+import { allTodo } from '../features/todo/todoSlice'
 
 import logo from '../logo.svg'
 
 export default function Header() {
+	const todo = useSelector(allTodo);
 	const counter = useSelector(selectCount);
 	const names = useSelector(allName);
 
@@ -20,6 +22,7 @@ export default function Header() {
 				</div>
 
 				<div className="list-status" >
+					<p>Todo {todo.length}</p>
 					<p>Counter {counter}</p>
 					<p>Names {names.length}</p>
 				</div>
