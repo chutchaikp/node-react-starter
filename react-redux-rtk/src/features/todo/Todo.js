@@ -50,12 +50,16 @@ function Todo() {
 				onKeyDown={(e) => {
 					// Enter is pressed	
 					if (e.keyCode === 13) {
+						if (myTodo.text === '') return;
 						dispatch(addTodo(myTodo));
 						setMyTodo({ text: '', finished: false, })
 					}
 				}}
 				onChange={(e) => { setMyTodo({ text: e.target.value, finished: false, }) }} />
-			<button onClick={() => { dispatch(addTodo(myTodo)); }} >ADD</button>
+			<button onClick={() => {
+				if (myTodo.text === '') return;
+				dispatch(addTodo(myTodo));
+			}} >ADD</button>
 
 		</div>
 	)

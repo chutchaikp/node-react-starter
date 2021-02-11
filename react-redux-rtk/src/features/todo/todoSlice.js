@@ -7,6 +7,7 @@ export const todoSlice = createSlice({
 	reducers: {
 		addTodo: (state, action) => {
 			return [...state, action.payload];
+			// state.push(action.payload);
 		},
 		toggleTodo: (state, action) => {
 			const payload = action.payload;
