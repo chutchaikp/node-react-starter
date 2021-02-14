@@ -1,0 +1,29 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;	
+	min-height: 100vh;
+}
+
+.App .message-list {
+	flex: 1 1 auto;
+	padding: 1rem;
+	border: 1px solid #ddd;	
+	display: flex;
+	align-items: flex-end;
+	
+}
+
+.App .input-box {
+	flex: 0 1 30px;
+	display: flex;
+	padding: 1rem;	
+	align-items: center;
+	background-color:#ddd;
+}
