@@ -1,41 +1,12 @@
-// .App {
-//   text-align: center;
-// }
+.App {
+  display: flex;
+  flex: 1;
+  flex-direction: column;  
+}
 
-// .App-logo {
-//   height: 40vmin;
-//   pointer-events: none;
-// }
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
-
-// .App-link {
-//   color: #61dafb;
-// }
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+.App > * {
+  margin-top: 20px;
+}
 
 body {
   padding: 10px;
@@ -53,9 +24,14 @@ body {
   cursor: pointer;
   box-sizing: border-box;
   margin: 0 .5rem 0 0;  
+
+  transition: all 1.5s ease-in-out;
 }
 .toggle-button:focus{
   outline: none;
+}
+.toggle-button:hover{
+  transform: rotateX(720deg);
 }
 
 .toggle-button__line {
@@ -71,8 +47,26 @@ body {
   top: 0;
   width: 300px;
   min-height: 100vh;
-  background-color: aqua;
+  background-color: aqua;  
   transition: transform 0.3s ease-out;
+}
+
+.alert {
+  position: absolute;
+  top:10px;
+  left:50%;
+  margin-left:-200px;  
+  width: 400px;
+  // height: 120px;
+  border-radius: 5px;
+  padding: 15px;
+  line-height: 15px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  background-color: violet;
+  transition: all 300ms;
+  //  opacity 300ms, transform 300ms;
 }
 
 

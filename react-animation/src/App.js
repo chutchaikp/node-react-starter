@@ -1,13 +1,15 @@
 
 // https://thoughtbot.com/blog/transitions-and-transforms
+// https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function
 
 import { useState } from 'react';
 import './App.css';
 
 function App() {
   const [isShow, setIsShow] = useState(false);
+  const [isAlert, setIsAlert] = useState(false);
   return (
-    <div>
+    <div className="App">
       <div
         className="menu"
         style={{ transform: isShow ? 'translate(-300px, 0)' : '' }}
@@ -17,6 +19,7 @@ function App() {
           <li>Posts</li>
           <li>About</li>
         </ul>
+
       </div>
 
       <button
@@ -28,18 +31,22 @@ function App() {
       </button>
 
       {isShow ? 'show' : 'hide'}
+
+      <button style={{ alignSelf: 'flex-start' }} onClick={() => setIsAlert(!isAlert)} >Show alert </button>
+
+      <div
+        style={{ opacity: isAlert ? 1 : 0, transform: isAlert ? 'scale(1)' : 'scale(0.9)' }}
+        className="alert">
+        <h3>Animated alert message</h3>
+        <div>This alert message is being trnsitioned in and out of the DOM</div>
+
+        <button style={{ alignSelf: 'flex-end', }} href="return false" onClick={(e) => {
+          e.preventDefault();
+          setIsAlert(false);
+        }} >close</button>
+      </div>
     </div>
   );
 }
 
 export default App;
-
-// const ToggleMenu = () => {
-//   return (
-//     <button class="toggle-button">
-//       <div class="toggle-button__line"></div>
-//       <div class="toggle-button__line"></div>
-//       <div class="toggle-button__line"></div>
-//     </button>
-//   );
-// }
