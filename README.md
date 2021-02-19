@@ -10,5 +10,7 @@
 - [ ] Blog
 - [ ] Shopping cart (Node+MongoDB, React)
 - [ ] Chess Game
-
+- [ ] GraphQL
 - [ ] TypeScript
+- [x] Flexbox
+- [x] React Animation
