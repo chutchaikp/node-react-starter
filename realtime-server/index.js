@@ -34,7 +34,7 @@ wss.on("connection", (ws) => {
 	this.timeId = setInterval(() => {
 
 		nbClients = wss.clients.size;
-		console.log(`Broadcast to ${nbClients} clients every 10 seconds`);
+		console.log(`Broadcast to ${nbClients} clients every 60 seconds`);
 
 		wss.clients.forEach((client) => {
 			const d = new Date();
@@ -44,7 +44,7 @@ wss.on("connection", (ws) => {
 			}
 			client.send(JSON.stringify(obj));
 		});
-	}, 10 * 1000);
+	}, 60 * 1000);
 	//#endregion
 
 	// On message send from some client

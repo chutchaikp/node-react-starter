@@ -3,6 +3,13 @@
 $linkColor: #0366d6;
 $textColor: #606060;
 
+$text-1: #333;
+$text-2: #666;
+$text-3: #999;
+$line: #CCC;
+$time-bg: #EEE;
+$background: #F7F7F7;
+
 body {
   padding: 0;  
 	width: 500px;
@@ -17,50 +24,70 @@ body {
   font-weight: 400;
 }
 
-.App {
+.container {
 	display: flex;
-	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;	
+	flex: 1;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 }
 
-input[type="text"] {
-	// padding: 5px 12px;
-	font-size: 1.5rem;
-	line-height: 20px;
-	color: #24292e;
-	vertical-align: middle;
-	background-color: #fafbfc;
-	background-repeat: no-repeat;
-	background-position: right 8px center;
-	border: 1px solid #e1e4e8;
-	border-radius: 6px;
-	outline: none;    
-	background-color: #ecececc2;
-	width: 98%;
-	padding-left: 7px;
+.App {
+	display: flex;
+	flex-direction: column;
+	width: 25rem;
+	min-height: 80vh;
+	box-shadow: 
+		0 0 8rem 0 rgba(black, 0.1),
+		0rem 2rem 4rem -3rem rgba(black, 0.5);
+
+	.input-box {
+		flex-basis: 60px;		
+		align-items: center;
+		display: flex;
+		padding: 0 0.5rem 0 0.5rem;
+
+		input {
+			outline: none;
+
+			border:none;
+			background-image:none;
+			background-color: white;
+			padding: 0.5rem 1rem;
+			margin-right: 1rem;
+			border-radius: 1.125rem;
+			flex-grow: 2;
+			box-shadow: 
+				0 0 1rem rgba(black, 0.1),
+				0rem 1rem 1rem -1rem rgba(black, 0.2);
+			
+			font-family: Red hat Display, sans-serif;
+			font-weight: 400;
+			letter-spacing: 0.025em;
+			
+			&:placeholder {
+				color: $text-3;
+			}
+		}
+	}
 }
-input[type="text"]:focus{
-	border: 1px solid #0366d6;	
-	box-shadow: 0 0 1pt 3pt #036ce44e;	
-}
-button {
-  font-family: 'Roboto', sans-serif;
-  padding: 0.5em 1.5em;
-  color: #666;
-  background-color: #fff;
-  border: 1px solid currentColor;
-  border-radius: 0.3em;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;  
-  outline: none;
-}
-button:focus {
-  background-color: #333; 
-  color: white;
-}
+
+// button {
+//   font-family: 'Roboto', sans-serif;
+//   padding: 0.5em 1.5em;
+//   color: #666;
+//   background-color: #fff;
+//   border: 1px solid currentColor;
+//   border-radius: 0.3em;
+//   text-align: center;
+//   vertical-align: middle;
+//   cursor: pointer;  
+//   outline: none;
+// }
+// button:focus {
+//   background-color: #333; 
+//   color: white;
+// }
 
 .App .message-list {
 	// flex: 1 1 auto;
@@ -71,18 +98,23 @@ button:focus {
 	border: 1px solid #ddd;	
 	display: flex;
 	align-items: flex-end;	
-}
-.message-list ul {
-	list-style: none;
-	margin-left: -2.5rem;
+	box-shadow: 
+		inset 0 2rem 2rem -2rem rgba(0, 0, 0, 0.05), 
+		inset 0 -2rem 2rem -2rem rgba(0, 0, 0, 0.05);
+
+	ul {
+		list-style: none;
+		margin-left: -2.5rem;
+	}
+
 }
 
-.App .input-box {	
-	flex-basis: 42px;		
-	align-items: center;
-	display: flex;
-}
-
+// .App .input-box {	
+// 	flex-basis: 60px;		
+// 	align-items: center;
+// 	display: flex;
+// 	padding: 0 0.5rem 0 0.5rem;	
+// }
 
 
 .message-item {

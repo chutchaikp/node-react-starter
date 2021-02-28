@@ -68,36 +68,37 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div className="container">
+      <div className="App">
 
-      <div className="message-list">
-        <ul>
-          {messages.map((m, index) => {
-            return (
-              <li key={index}>
-                <MessageItem message={m} />
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <div className="input-box" >
-        <input
-          placeholder="Enter a message"
-          type="text"
-          onKeyDown={(e) => {
-            if (e.keyCode === 13) {
-              e.preventDefault();
-              socket.send(JSON.stringify({ type: 'message', value: text }));
-              setText('');
-            }
-          }}
-          value={text}
-          onChange={(e) => {
-            setText(e.target.value);
-          }}
-        />
-        {/* <button
+        <div className="message-list">
+          <ul>
+            {messages.map((m, index) => {
+              return (
+                <li key={index}>
+                  <MessageItem message={m} />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="input-box" >
+          <input
+            placeholder="Enter a message"
+            type="text"
+            onKeyDown={(e) => {
+              if (e.keyCode === 13) {
+                e.preventDefault();
+                socket.send(JSON.stringify({ type: 'message', value: text }));
+                setText('');
+              }
+            }}
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+            }}
+          />
+          {/* <button
           onClick={() => {
             if (!socket) {
               socketConnect();
@@ -106,8 +107,9 @@ export default function App() {
           }}
         >send</button> */}
 
-      </div>
+        </div>
 
+      </div>
     </div>
   );
 }
