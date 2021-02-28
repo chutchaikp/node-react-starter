@@ -1,6 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   padding: 0;
-  margin: 0;
+  width: 500px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.2px;
+  color: #606060;
+  font-size: 14px;
+  line-height: 2rem;
+  font-weight: 400;
 }
 
 .App {
@@ -16,10 +26,53 @@ body {
   min-height: 100vh;
 }
 
+input[type="text"] {
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: #24292e;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  outline: none;
+  background-color: #ecececc2;
+  width: 98%;
+  padding-left: 7px;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #0366d6;
+  -webkit-box-shadow: 0 0 1pt 3pt #036ce44e;
+          box-shadow: 0 0 1pt 3pt #036ce44e;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5em 1.5em;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid currentColor;
+  border-radius: 0.3em;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus {
+  background-color: #333;
+  color: white;
+}
+
 .App .message-list {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  background-color: rgba(94, 178, 248, 0.758);
   padding: 1rem;
   border: 1px solid #ddd;
   display: -webkit-box;
@@ -30,17 +83,40 @@ body {
           align-items: flex-end;
 }
 
+.message-list ul {
+  list-style: none;
+  margin-left: -2.5rem;
+}
+
 .App .input-box {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 30px;
-          flex: 0 1 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
+  -ms-flex-preferred-size: 42px;
+      flex-basis: 42px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.message-body {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 12px;
+  margin: 2px 0;
+}
+
+.avitar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: #ccedff;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=App.css.map */

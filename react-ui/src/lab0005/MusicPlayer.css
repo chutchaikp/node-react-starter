@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,800&display=swap");
+body, html {
+  background: linear-gradient(135deg, #FFDFDF, #DFDFFF);
+  height: 100%;
+  color: #60656F;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 0.025rem;
+}
+
+.player {
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 36rem;
+  -webkit-box-shadow: 0 2rem 2rem -2rem rgba(0, 0, 0, 0.5), 0 1rem 4rem -1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem -2rem rgba(0, 0, 0, 0.5), 0 1rem 4rem -1rem rgba(0, 0, 0, 0.2);
+}
+
+.album-cover {
+  position: absolute;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  left: 1.5rem;
+  top: -3rem;
+  z-index: 2;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-box-shadow: 0 2rem 2rem -2rem rgba(0, 0, 0, 0.5), 0 0rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem -2rem rgba(0, 0, 0, 0.5), 0 0rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.album-cover .image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-image: url("https://cdn-s3.allmusic.com/release-covers/500/0005/081/0005081250.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: spin 2.5s linear infinite;
+          animation: spin 2.5s linear infinite;
+}
+
+.panel {
+  position: relative;
+  height: 6.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.panel:hover {
+  height: 9rem;
+}
+
+.panel:hover .line {
+  -webkit-transform: scaley(2);
+          transform: scaley(2);
+}
+
+.panel:hover #expand-button {
+  opacity: 0.4;
+  -webkit-transition: opacity 200ms 200ms;
+  transition: opacity 200ms 200ms;
+}
+
+.panel:hover #expand-button:hover {
+  opacity: 0.8;
+}
+
+.info {
+  position: absolute;
+  top: 1.5rem;
+  left: 10.5rem;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  width: 12rem;
+}
+
+.info .title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.info .artist {
+  font-size: 0.8rem;
+}
+
+.controls {
+  font-size: 1.25rem;
+}
+
+.controls .playback {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 1.5rem;
+  width: 9rem;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.controls div {
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.controls .play {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding-left: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: white;
+}
+
+.controls .play:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0 0.75rem 1rem -1rem black, 0 0rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.75rem 1rem -1rem black, 0 0rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+  opacity: 0.6;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.controls .play:hover:after {
+  opacity: 1;
+}
+
+.controls .backward, .controls .forward {
+  padding-top: 0.25rem;
+}
+
+.controls .repeat, .controls .playlist, .controls .heart {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+#expand-button {
+  opacity: 0;
+  position: absolute;
+  top: 5.5rem;
+  left: 16rem;
+  text-align: center;
+  width: 4rem;
+  -webkit-transition: opacity 200ms 0ms;
+  transition: opacity 200ms 0ms;
+  cursor: pointer;
+}
+
+#expand-button:hover {
+  opacity: 0.8;
+}
+
+.timeline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.timeline .current-time, .timeline .total-time {
+  display: none;
+  position: absolute;
+  font-size: 0.8rem;
+  opacity: 0;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.timeline .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  height: 0.25rem;
+  width: 100%;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.timeline .line .current {
+  background: #F0B67F;
+  width: 50%;
+  height: 100%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.player.expand {
+  width: 24rem;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.player.expand .album-cover {
+  top: 8rem;
+  left: 8rem;
+}
+
+.player.expand .panel {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 36rem;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.player.expand .panel:hover .line {
+  -webkit-transform: scaley(1);
+          transform: scaley(1);
+}
+
+.player.expand .panel .info {
+  text-align: center;
+  left: 6rem;
+  top: 19rem;
+}
+
+.player.expand .panel .controls {
+  margin: 5rem 0 0;
+  width: 12rem;
+}
+
+.player.expand .panel .controls .playback {
+  top: 27.5rem;
+  right: 7.5rem;
+}
+
+.player.expand .panel .controls .repeat {
+  display: block;
+  left: 2rem;
+  bottom: 1.5rem;
+  opacity: 0.3;
+}
+
+.player.expand .panel .controls .repeat:hover {
+  opacity: 0.9;
+}
+
+.player.expand .panel .controls .heart {
+  display: block;
+  right: 2rem;
+  bottom: 1.5rem;
+  opacity: 0.6;
+}
+
+.player.expand .panel .controls .heart:hover {
+  opacity: 0.9;
+  color: #E87461;
+}
+
+.player.expand .panel .controls .playlist {
+  display: block;
+  right: 2rem;
+  top: 1.5rem;
+  opacity: 0.6;
+}
+
+.player.expand .panel .controls .playlist:hover {
+  opacity: 0.9;
+}
+
+.player.expand .panel .timeline {
+  left: 4rem;
+  bottom: 11rem;
+  width: 16rem;
+}
+
+.player.expand .panel .timeline .line {
+  border-radius: 1rem;
+}
+
+.player.expand .panel .timeline .line .current {
+  border-radius: 1rem;
+}
+
+.player.expand .panel .timeline .current-time {
+  display: block;
+  left: -2.2rem;
+  opacity: 0.8;
+}
+
+.player.expand .panel .timeline .total-time {
+  display: block;
+  right: -2.2rem;
+  opacity: 0.8;
+}
+
+.player.expand .panel #expand-button {
+  left: 10rem;
+  top: 1.5rem;
+  opacity: 0.3;
+  -webkit-transform: scaley(-1);
+          transform: scaley(-1);
+}
+
+.player.expand .panel #expand-button:hover {
+  opacity: 0.8;
+}
+
+button {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+/*# sourceMappingURL=MusicPlayer.css.map */

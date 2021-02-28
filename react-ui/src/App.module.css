@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 500px;
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vh;
+  background-color: violet;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+li {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: white;
+  padding: 16px 40px 16px 20px;
+  margin: 0 0 20px 0;
+  border-radius: 10px;
+  background-color: rgba(25, 147, 147, 0.2);
+}
+
+.Left {
+  position: relative;
+}
+
+.Left:after {
+  position: absolute;
+  top: 0px;
+  left: -35px;
+  content: "";
+  border-top: 15px solid rgba(25, 147, 147, 0.2);
+  border-left: 15px solid transparent;
+}
+
+.Right {
+  position: relative;
+}
+
+.Right:after {
+  position: absolute;
+  top: 0px;
+  right: -75px;
+  content: "";
+  border-top: 15px solid rgba(25, 147, 147, 0.2);
+  border-right: 15px solid transparent;
+}
+/*# sourceMappingURL=App.module.css.map */

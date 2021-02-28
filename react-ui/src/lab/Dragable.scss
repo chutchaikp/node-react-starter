@@ -1,0 +1,26 @@
+.container {
+	// display: flex;
+	// flex: 1;
+	// flex-direction: column;
+	// min-height: 100vh;
+
+	background: #222225;
+	// width: 100%;
+	// height: 100%;
+}
+
+.node {
+	top: 2rem;
+	left: 2rem;
+	
+	position: absolute;
+	background: #333344;
+	width: 2rem;
+	height: 2rem;
+	
+
+}
+
+.on {
+	background: #cc3311;
+}

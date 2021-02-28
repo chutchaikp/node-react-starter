@@ -1,0 +1,694 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+body {
+  background-color: #444;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #444;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center, .clock, .clock .seconds, .clock .second-0, .clock .second-1, .clock .second-2, .clock .second-3, .clock .second-4, .clock .second-5, .clock .second-6, .clock .second-7, .clock .second-8, .clock .second-9, .clock .second-10, .clock .second-11, .clock .second-12, .clock .second-13, .clock .second-14, .clock .second-15, .clock .second-16, .clock .second-17, .clock .second-18, .clock .second-19, .clock .second-20, .clock .second-21, .clock .second-22, .clock .second-23, .clock .second-24, .clock .second-25, .clock .second-26, .clock .second-27, .clock .second-28, .clock .second-29, .clock .second-30, .clock .second-31, .clock .second-32, .clock .second-33, .clock .second-34, .clock .second-35, .clock .second-36, .clock .second-37, .clock .second-38, .clock .second-39, .clock .second-40, .clock .second-41, .clock .second-42, .clock .second-43, .clock .second-44, .clock .second-45, .clock .second-46, .clock .second-47, .clock .second-48, .clock .second-49, .clock .second-50, .clock .second-51, .clock .second-52, .clock .second-53, .clock .second-54, .clock .second-55, .clock .second-56, .clock .second-57, .clock .second-58, .clock .second-59, .clock .digital {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.clock {
+  width: 250px;
+  height: 250px;
+  background: #222;
+  border: 10px #333 solid;
+  border-radius: 50%;
+}
+
+.clock .seconds {
+  width: 242px;
+  height: 242px;
+}
+
+.clock .seconds circle {
+  stroke: aqua;
+  stroke-width: 1px;
+  stroke-dasharray: 742;
+  fill: none;
+  -webkit-animation: seconds 2s linear infinite;
+          animation: seconds 2s linear infinite;
+}
+
+.clock .second-0 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(0deg) translateY(-110px);
+          transform: rotate(0deg) translateY(-110px);
+}
+
+.clock .second-1 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(6deg) translateY(-110px);
+          transform: rotate(6deg) translateY(-110px);
+}
+
+.clock .second-2 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(12deg) translateY(-110px);
+          transform: rotate(12deg) translateY(-110px);
+}
+
+.clock .second-3 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(18deg) translateY(-110px);
+          transform: rotate(18deg) translateY(-110px);
+}
+
+.clock .second-4 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(24deg) translateY(-110px);
+          transform: rotate(24deg) translateY(-110px);
+}
+
+.clock .second-5 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(30deg) translateY(-110px);
+          transform: rotate(30deg) translateY(-110px);
+}
+
+.clock .second-6 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(36deg) translateY(-110px);
+          transform: rotate(36deg) translateY(-110px);
+}
+
+.clock .second-7 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(42deg) translateY(-110px);
+          transform: rotate(42deg) translateY(-110px);
+}
+
+.clock .second-8 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(48deg) translateY(-110px);
+          transform: rotate(48deg) translateY(-110px);
+}
+
+.clock .second-9 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(54deg) translateY(-110px);
+          transform: rotate(54deg) translateY(-110px);
+}
+
+.clock .second-10 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(60deg) translateY(-110px);
+          transform: rotate(60deg) translateY(-110px);
+}
+
+.clock .second-11 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(66deg) translateY(-110px);
+          transform: rotate(66deg) translateY(-110px);
+}
+
+.clock .second-12 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(72deg) translateY(-110px);
+          transform: rotate(72deg) translateY(-110px);
+}
+
+.clock .second-13 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(78deg) translateY(-110px);
+          transform: rotate(78deg) translateY(-110px);
+}
+
+.clock .second-14 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(84deg) translateY(-110px);
+          transform: rotate(84deg) translateY(-110px);
+}
+
+.clock .second-15 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(90deg) translateY(-110px);
+          transform: rotate(90deg) translateY(-110px);
+}
+
+.clock .second-16 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(96deg) translateY(-110px);
+          transform: rotate(96deg) translateY(-110px);
+}
+
+.clock .second-17 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(102deg) translateY(-110px);
+          transform: rotate(102deg) translateY(-110px);
+}
+
+.clock .second-18 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(108deg) translateY(-110px);
+          transform: rotate(108deg) translateY(-110px);
+}
+
+.clock .second-19 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(114deg) translateY(-110px);
+          transform: rotate(114deg) translateY(-110px);
+}
+
+.clock .second-20 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(120deg) translateY(-110px);
+          transform: rotate(120deg) translateY(-110px);
+}
+
+.clock .second-21 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(126deg) translateY(-110px);
+          transform: rotate(126deg) translateY(-110px);
+}
+
+.clock .second-22 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(132deg) translateY(-110px);
+          transform: rotate(132deg) translateY(-110px);
+}
+
+.clock .second-23 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(138deg) translateY(-110px);
+          transform: rotate(138deg) translateY(-110px);
+}
+
+.clock .second-24 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(144deg) translateY(-110px);
+          transform: rotate(144deg) translateY(-110px);
+}
+
+.clock .second-25 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(150deg) translateY(-110px);
+          transform: rotate(150deg) translateY(-110px);
+}
+
+.clock .second-26 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(156deg) translateY(-110px);
+          transform: rotate(156deg) translateY(-110px);
+}
+
+.clock .second-27 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(162deg) translateY(-110px);
+          transform: rotate(162deg) translateY(-110px);
+}
+
+.clock .second-28 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(168deg) translateY(-110px);
+          transform: rotate(168deg) translateY(-110px);
+}
+
+.clock .second-29 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(174deg) translateY(-110px);
+          transform: rotate(174deg) translateY(-110px);
+}
+
+.clock .second-30 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(180deg) translateY(-110px);
+          transform: rotate(180deg) translateY(-110px);
+}
+
+.clock .second-31 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(186deg) translateY(-110px);
+          transform: rotate(186deg) translateY(-110px);
+}
+
+.clock .second-32 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(192deg) translateY(-110px);
+          transform: rotate(192deg) translateY(-110px);
+}
+
+.clock .second-33 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(198deg) translateY(-110px);
+          transform: rotate(198deg) translateY(-110px);
+}
+
+.clock .second-34 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(204deg) translateY(-110px);
+          transform: rotate(204deg) translateY(-110px);
+}
+
+.clock .second-35 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(210deg) translateY(-110px);
+          transform: rotate(210deg) translateY(-110px);
+}
+
+.clock .second-36 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(216deg) translateY(-110px);
+          transform: rotate(216deg) translateY(-110px);
+}
+
+.clock .second-37 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(222deg) translateY(-110px);
+          transform: rotate(222deg) translateY(-110px);
+}
+
+.clock .second-38 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(228deg) translateY(-110px);
+          transform: rotate(228deg) translateY(-110px);
+}
+
+.clock .second-39 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(234deg) translateY(-110px);
+          transform: rotate(234deg) translateY(-110px);
+}
+
+.clock .second-40 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(240deg) translateY(-110px);
+          transform: rotate(240deg) translateY(-110px);
+}
+
+.clock .second-41 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(246deg) translateY(-110px);
+          transform: rotate(246deg) translateY(-110px);
+}
+
+.clock .second-42 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(252deg) translateY(-110px);
+          transform: rotate(252deg) translateY(-110px);
+}
+
+.clock .second-43 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(258deg) translateY(-110px);
+          transform: rotate(258deg) translateY(-110px);
+}
+
+.clock .second-44 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(264deg) translateY(-110px);
+          transform: rotate(264deg) translateY(-110px);
+}
+
+.clock .second-45 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(270deg) translateY(-110px);
+          transform: rotate(270deg) translateY(-110px);
+}
+
+.clock .second-46 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(276deg) translateY(-110px);
+          transform: rotate(276deg) translateY(-110px);
+}
+
+.clock .second-47 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(282deg) translateY(-110px);
+          transform: rotate(282deg) translateY(-110px);
+}
+
+.clock .second-48 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(288deg) translateY(-110px);
+          transform: rotate(288deg) translateY(-110px);
+}
+
+.clock .second-49 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(294deg) translateY(-110px);
+          transform: rotate(294deg) translateY(-110px);
+}
+
+.clock .second-50 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(300deg) translateY(-110px);
+          transform: rotate(300deg) translateY(-110px);
+}
+
+.clock .second-51 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(306deg) translateY(-110px);
+          transform: rotate(306deg) translateY(-110px);
+}
+
+.clock .second-52 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(312deg) translateY(-110px);
+          transform: rotate(312deg) translateY(-110px);
+}
+
+.clock .second-53 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(318deg) translateY(-110px);
+          transform: rotate(318deg) translateY(-110px);
+}
+
+.clock .second-54 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(324deg) translateY(-110px);
+          transform: rotate(324deg) translateY(-110px);
+}
+
+.clock .second-55 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(330deg) translateY(-110px);
+          transform: rotate(330deg) translateY(-110px);
+}
+
+.clock .second-56 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(336deg) translateY(-110px);
+          transform: rotate(336deg) translateY(-110px);
+}
+
+.clock .second-57 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(342deg) translateY(-110px);
+          transform: rotate(342deg) translateY(-110px);
+}
+
+.clock .second-58 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(348deg) translateY(-110px);
+          transform: rotate(348deg) translateY(-110px);
+}
+
+.clock .second-59 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #BBB;
+  -webkit-transform: rotate(354deg) translateY(-110px);
+          transform: rotate(354deg) translateY(-110px);
+}
+
+.clock .digital {
+  color: white;
+  width: 105px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.clock .digital .time {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.clock .digital .health {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clock .digital .health .hearth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clock .digital .health .hearth .icon {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background: #F85B5B;
+  -webkit-transform: translateY(3px) rotate(-45deg);
+          transform: translateY(3px) rotate(-45deg);
+  -webkit-animation: beat 360ms infinite alternate ease-in-out;
+          animation: beat 360ms infinite alternate ease-in-out;
+}
+
+.clock .digital .health .hearth .icon:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F85B5B;
+  top: -3px;
+  left: 0px;
+}
+
+.clock .digital .health .hearth .icon:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F85B5B;
+}
+
+.clock .digital .health .hearth .rate {
+  margin-left: 6px;
+}
+
+@-webkit-keyframes beat {
+  0% {
+    -webkit-transform: translateY(3px) rotate(-45deg) scale(1);
+            transform: translateY(3px) rotate(-45deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(3px) rotate(-45deg) scale(1.3);
+            transform: translateY(3px) rotate(-45deg) scale(1.3);
+  }
+}
+
+@keyframes beat {
+  0% {
+    -webkit-transform: translateY(3px) rotate(-45deg) scale(1);
+            transform: translateY(3px) rotate(-45deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(3px) rotate(-45deg) scale(1.3);
+            transform: translateY(3px) rotate(-45deg) scale(1.3);
+  }
+}
+
+@-webkit-keyframes seconds {
+  0% {
+    stroke-dashoffset: 1482;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes seconds {
+  0% {
+    stroke-dashoffset: 1482;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+/*# sourceMappingURL=Clock.css.map */

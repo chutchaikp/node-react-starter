@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EAMV,UAAU,EAAE,OAAO;CAGnB;;AAED,AAAA,KAAK,CAAC;EACL,GAAG,EAAE,IAAI;EACT,IAAI,EAAE,IAAI;EAEV,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAGZ;;AAED,AAAA,GAAG,CAAC;EACH,UAAU,EAAE,OAAO;CACnB",
+    "sources": [
+        "Dragable.scss"
+    ],
+    "names": [],
+    "file": "Dragable.css"
+}

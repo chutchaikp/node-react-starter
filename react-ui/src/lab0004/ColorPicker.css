@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap");
+body {
+  background: #232931;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 24rem;
+  background: #2e3641;
+  -webkit-box-shadow: 0rem 2rem 4rem -3rem black;
+          box-shadow: 0rem 2rem 4rem -3rem black;
+}
+
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+  background: #3d4752;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  background: #37404c;
+}
+
+.menu .item {
+  opacity: 0.6;
+  padding: 1rem 2rem 0.75rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: opacity 600ms, border 200ms;
+  transition: opacity 600ms, border 200ms;
+}
+
+.menu .item.active, .menu .item:hover {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+
+.panel {
+  padding: 2rem 2rem 1rem;
+}
+
+label {
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.slider {
+  position: relative;
+  margin: 2rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider input[type="range"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  background: transparent;
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
+}
+
+.slider .thumb {
+  position: absolute;
+  top: 1.7rem;
+  left: 9.4rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background: white;
+  pointer-events: none;
+  -webkit-box-shadow: 0 0.25rem 1rem 0rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.25rem 1rem 0rem rgba(0, 0, 0, 0.5);
+}
+
+.slider.slider-h input {
+  background: -webkit-gradient(linear, left top, right top, from(#FF0000), color-stop(16.67%, #FFFF00), color-stop(33.33%, #00FF00), color-stop(50%, #00FFFF), color-stop(66.66%, #0000FF), color-stop(83.33%, #FF00FF), to(#FF0000));
+  background: linear-gradient(90deg, #FF0000 0%, #FFFF00 16.67%, #00FF00 33.33%, #00FFFF 50%, #0000FF 66.66%, #FF00FF 83.33%, #FF0000 100%);
+}
+
+.slider.slider-h .thumb {
+  background-color: #00FFFF;
+}
+
+.slider.slider-s input {
+  background: #00FFFF;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f7f7f), to(rgba(127, 127, 127, 0)));
+  background-image: linear-gradient(90deg, #7f7f7f, rgba(127, 127, 127, 0));
+}
+
+.slider.slider-s .thumb {
+  background-color: #40BFBF;
+}
+
+.slider.slider-l input {
+  background-color: #40BFBF;
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, rgba(127, 127, 127, 0)), to(white));
+  background-image: linear-gradient(90deg, black 0%, rgba(127, 127, 127, 0) 50%, white 100%);
+}
+
+.slider.slider-l .thumb {
+  background-color: #40BFBF;
+}
+
+.output {
+  position: relative;
+}
+
+.output .color-preview {
+  position: absolute;
+  top: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  right: 2rem;
+  background: #40BFBF;
+  -webkit-box-shadow: 0 0.25rem 1rem 0rem rgba(22, 26, 31, 0.5);
+          box-shadow: 0 0.25rem 1rem 0rem rgba(22, 26, 31, 0.5);
+}
+
+.output .hex-code {
+  padding: 2rem;
+  background: #37404c;
+}
+
+.output .hex-code .code {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=ColorPicker.css.map */

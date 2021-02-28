@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display';
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.container button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: 'Red Hat Display';
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.container .alert {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  width: 220px;
+  margin-left: -110px;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: hotpink;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  opacity: 0.2;
+  -webkit-transition: opacity 300ms, -webkit-transform 200ms;
+  transition: opacity 300ms, -webkit-transform 200ms;
+  transition: opacity 300ms, transform 200ms;
+  transition: opacity 300ms, transform 200ms, -webkit-transform 200ms;
+}
+/*# sourceMappingURL=Styles.css.map */

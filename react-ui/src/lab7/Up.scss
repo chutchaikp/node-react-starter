@@ -1,0 +1,77 @@
+
+.container {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 228, 196, 0.16);
+
+	.profile-card {
+		position: relative;
+		width: 28rem;
+		min-height: 15rem;
+		// background-color: aquamarine;
+		text-align: center;
+		border-radius: 2rem;
+		background-color: white;
+		box-shadow: 
+		0 2rem 4rem -3rem rgba(0, 45, 64, 0.5), 
+		0 0rem 8rem 0 rgba(0, 45, 64, 0.1);
+
+		.profile {
+
+		}
+
+		.pic {		
+			background-image: url(./fg.jpg);
+			// "./images/fg.jpg";			
+			background-position: center;
+			background-size: cover;
+
+			background-blend-mode: overlay;
+			position: absolute;
+			top: -5rem;
+			left: 50%;
+			margin-left: -4rem;
+			width: 8rem;
+			height: 8rem;
+			// background-color: aquamarine;
+			border-radius: 50%;
+			z-index: 2;
+			box-shadow: 
+			// 0 2rem 4rem -3rem rgba(0, 45, 64, 0.5), 
+			// 0 0rem 8rem 0 rgba(0, 45, 64, 0.1);
+			  0 1rem 1.5rem -1rem rgba(0, 45, 64, 0.2), 
+				0 0 0.5rem 0 rgba(0, 45, 64, 0.2);
+		}
+
+		.above-fold {
+
+			.expand-button {
+				position: absolute;
+				bottom: 10px;
+				left: 50%;
+				margin-left: -15px;
+				animation: bounce 4s infinite;
+			}
+		}
+
+	}
+}
+
+@keyframes  bounce {
+	0%, 60%, 100% {
+		transform: translatey(0);
+	}
+	
+	80% {
+		transform: translatey(-8px);
+	}
+	
+	90% {
+		transform: translatey(8px);
+	}
+}

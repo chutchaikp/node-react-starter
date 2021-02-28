@@ -1,0 +1,27 @@
+body {
+	padding: 0;
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg');
+	background-size: cover;
+	background-position: center;	
+
+	animation: spin 35s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg) }
+	50% { transform: rotate(180deg) }
+	100% { transform: rotate(360deg) }
+}

@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+body {
+  font-family: 'Open Sans';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  position: relative;
+  background-color: turquoise;
+  background-image: url(https://source.unsplash.com/random/256x383);
+  background-size: cover;
+  background-position: center;
+  width: 15rem;
+  height: 30rem;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.05), 2px 4px 32px 0 rgba(0, 0, 0, 0.1), 0 0 64px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.05), 2px 4px 32px 0 rgba(0, 0, 0, 0.1), 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  overflow: hidden;
+}
+
+.card .header {
+  -webkit-transform: translateY(25rem);
+          transform: translateY(25rem);
+  background-color: white;
+  height: 4rem;
+  overflow: hidden;
+  padding: 10px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.card .header .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .description {
+  padding-top: 1rem;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+.card:hover .header {
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+  height: 38rem;
+  overflow: scroll;
+}
+/*# sourceMappingURL=HoverCards.css.map */

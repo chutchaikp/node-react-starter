@@ -1,0 +1,304 @@
+.xbody.on .floor, html.on .floor {
+  background: #E5D5B7;
+}
+
+.xbody.on .wall, html.on .wall {
+  background: #F7EBD4;
+}
+
+.xbody.on .shade, html.on .shade {
+  background: -webkit-gradient(linear, left top, right top, from(#DDC6B1), color-stop(#F4EEE6), to(#DDC6B1));
+  background: linear-gradient(90deg, #DDC6B1, #F4EEE6, #DDC6B1);
+}
+
+.xbody.on .shade .top, html.on .shade .top {
+  background: -webkit-gradient(linear, left top, right top, from(#DDC6B1), color-stop(#F4EEE6), to(#DDC6B1));
+  background: linear-gradient(90deg, #DDC6B1, #F4EEE6, #DDC6B1);
+}
+
+.xbody.on .shade .bottom, html.on .shade .bottom {
+  background: -webkit-gradient(linear, left top, right top, from(#F4EEE6), color-stop(#FFF8EF), to(#F4EEE6));
+  background: linear-gradient(90deg, #F4EEE6, #FFF8EF, #F4EEE6);
+}
+
+.xbody.on .rope, html.on .rope {
+  background: #E5CCB7;
+}
+
+.xbody.on .rope:after, html.on .rope:after {
+  background: radial-gradient(#E5BD9C, #C19774);
+}
+
+.xbody.on .stand, html.on .stand {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #C7D2D8), color-stop(60%, #E6ECEF), color-stop(62%, #FFF8EF), color-stop(65%, #E6ECEF), color-stop(90%, #C7D2D8));
+  background: linear-gradient(90deg, #C7D2D8 20%, #E6ECEF 60%, #FFF8EF 62%, #E6ECEF 65%, #C7D2D8 90%);
+}
+
+.xbody.on .base, html.on .base {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #C7D2D8), color-stop(60%, #E6ECEF), color-stop(62%, #FFF8EF), color-stop(65%, #E6ECEF), color-stop(90%, #C7D2D8));
+  background: linear-gradient(90deg, #C7D2D8 20%, #E6ECEF 60%, #FFF8EF 62%, #E6ECEF 65%, #C7D2D8 90%);
+}
+
+.xbody.on .base:before, html.on .base:before {
+  background: radial-gradient(#C7D2D8 0%, #E6ECEF 5%, #FFF8EF 10%, #E6ECEF 35%, #C7D2D8 90%);
+}
+
+.xbody.on .base:after, html.on .base:after {
+  background: #C7D2D8;
+}
+
+.glow {
+  display: none;
+  pointer-events: none;
+}
+
+.xbody.on .glow, html.on .glow {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform: translatez(20px);
+          transform: translatez(20px);
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+}
+
+.xbody.on .glow:after, html.on .glow:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #0F1119;
+  -webkit-transform: translatez(-30px);
+          transform: translatez(-30px);
+  z-index: -10;
+}
+
+.xbody.on .glow .bottom-glow, html.on .glow .bottom-glow {
+  position: absolute;
+  left: 4rem;
+  bottom: 12rem;
+  width: 20rem;
+  height: 40rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(30%, black), color-stop(white), to(black));
+  background: linear-gradient(rgba(255, 255, 255, 0), black 30%, white, black);
+  -webkit-transform: scale(0.8) perspective(4px) rotateX(1deg) translateZ(-3px);
+          transform: scale(0.8) perspective(4px) rotateX(1deg) translateZ(-3px);
+  z-index: -2;
+}
+
+.xbody.on .glow .top-glow, html.on .glow .top-glow {
+  position: absolute;
+  left: 4rem;
+  bottom: 18rem;
+  width: 20rem;
+  height: 40rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(black, white);
+  -webkit-transform: scale(0.8) perspective(4px) rotateX(-1deg) translateZ(-3px);
+          transform: scale(0.8) perspective(4px) rotateX(-1deg) translateZ(-3px);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.xbody.on .glow .shade, html.on .glow .shade {
+  bottom: 24rem;
+  left: 4rem;
+  background: white;
+  z-index: 200;
+  -webkit-transform: scale(0.8) perspective(4px) rotateX(1deg) translateZ(-3px);
+          transform: scale(0.8) perspective(4px) rotateX(1deg) translateZ(-3px);
+}
+
+.xbody.on .glow .shade .top, .xbody.on .glow .shade .bottom, html.on .glow .shade .top, html.on .glow .shade .bottom {
+  background: white;
+}
+
+.xbody.on .glow .blur, html.on .glow .blur {
+  -webkit-filter: blur(64px);
+          filter: blur(64px);
+  z-index: 300;
+}
+
+.xbody {
+  width: 100%;
+  height: 100%;
+  background: #262833;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.floor {
+  position: absolute;
+  height: 10rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #262833;
+}
+
+.wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10rem;
+  background: #2D2F38;
+}
+
+.lamp {
+  position: absolute;
+  bottom: 40rem;
+  left: 4rem;
+  -webkit-transform: translatez(10px);
+          transform: translatez(10px);
+}
+
+.shade {
+  position: absolute;
+  width: 20rem;
+  height: 16rem;
+  background: #1C1E26;
+  -webkit-transform: scale(0.8) perspective(4px) rotateX(1deg) translateZ(-3px);
+          transform: scale(0.8) perspective(4px) rotateX(1deg) translateZ(-3px);
+  z-index: -1;
+}
+
+.shade .bottom {
+  position: absolute;
+  bottom: -0.5rem;
+  height: 1rem;
+  width: 20rem;
+  background: #0F1119;
+  border-radius: 50%;
+}
+
+.shade .top {
+  position: absolute;
+  height: 4rem;
+  width: 20rem;
+  background: #1C1E26;
+  border-radius: 50%;
+  top: -2rem;
+}
+
+.stand {
+  position: absolute;
+  top: 12.88rem;
+  left: 9.5rem;
+  z-index: 2;
+  background: #1C1E26;
+  height: 20rem;
+  width: 1rem;
+  border-radius: 20rem 20rem 10rem 10rem/1rem 1rem 5rem 5rem;
+}
+
+.trigger {
+  position: absolute;
+  top: 12.9rem;
+  left: 11.5rem;
+  width: 2rem;
+  height: 5rem;
+}
+
+.rope {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 2;
+  background: #161821;
+  height: 4rem;
+  width: 0.3rem;
+  cursor: pointer;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: height 100ms;
+  transition: height 100ms;
+}
+
+.rope:after {
+  content: '';
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background: #0F1119;
+  bottom: -0.25rem;
+  left: -0.3rem;
+  border-radius: 50%;
+}
+
+.rope:hover {
+  -webkit-animation: swing 0.5s infinite ease-in-out alternate;
+          animation: swing 0.5s infinite ease-in-out alternate;
+}
+
+.rope.down {
+  height: 5rem;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.base {
+  position: absolute;
+  top: 32.5rem;
+  left: 5rem;
+  z-index: 2;
+  background: #1C1E26;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.base:before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  bottom: 0.5rem;
+  left: 0;
+  background: #161821;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.base:after {
+  content: '';
+  position: absolute;
+  height: 0.5rem;
+  width: 10rem;
+  background: #1C1E26;
+  top: 0.5rem;
+  -webkit-transform: translateZ(-20px);
+          transform: translateZ(-20px);
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+/*# sourceMappingURL=OnOffSwitch.css.map */

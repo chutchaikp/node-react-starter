@@ -1,0 +1,133 @@
+$duration: 1.7s;
+$curve: cubic-bezier(.75,-.1,.27,.97);
+
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // width: 400px;
+  // height: 400px;
+  // margin-top: -200px;
+  // margin-left: -200px;
+  // border-radius: 2px;
+
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #2A9D8F;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background: #fff;
+}
+
+.shadow {
+	position: absolute;
+	bottom: -40px;
+	width: 100px;
+	height: 30px;
+	background: rgba(#264653, 0.5);
+	border-radius: 50%;
+	animation: shadow $duration ease-in-out infinite both;
+	z-index: -1;
+}
+
+.down {
+	position: relative;
+	top: 25px;
+	animation: down $duration ease-in infinite both;
+	.up {
+		animation: up $duration ease-in-out infinite both;
+		.rotate-in {
+			animation: rotate-in $duration  ease-out infinite both;
+			.rotate-out {
+				animation: rotate-out $duration  ease-in infinite both;
+				.squash {
+					animation: squash $duration $curve infinite;
+					transform-origin: bottom center;
+				}
+			}
+		}
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translateY(-100px)
+	}
+	20%, 100% {
+		transform: translateY(0px)
+	}
+}
+
+@keyframes up {
+	0%, 75% {
+		transform: translateY(0px)
+	}
+	
+	100% {
+		transform: translateY(-100px)
+	}
+}
+
+@keyframes rotate-in {
+	0% {
+		transform: rotate(-135deg)
+	}
+	20%, 100% {
+		transform: rotate(0deg)
+	}
+}
+
+@keyframes rotate-out {
+	0%, 80% {
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(135deg)
+	}
+}
+
+@keyframes squash {
+
+	0%, 4% {
+		transform: scale(1)
+	}
+	
+	45%, 48% {
+		transform: scale(2, 0.5)
+	}
+}
+
+
+@keyframes shadow {
+	0%, 5%, 100% {
+		transform: scaleX(.8);
+	}
+	45%, 52% {
+		transform: scaleX(2.5);
+	}
+}

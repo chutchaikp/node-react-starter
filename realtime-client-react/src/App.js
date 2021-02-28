@@ -45,12 +45,17 @@ export default function App() {
         socketConnect();
       };
       socket.onmessage = (e) => {
-        debugger;
-        const data = JSON.parse(e.data);
-        if (data.type === 'message') {
+        const { type, value } = JSON.parse(e.data);
+        if (type === 'message') {
           setMessages(prev => {
-            return [...prev, e.data];
+            return [...prev, value];
           });
+        }
+        // else if (type === 'ack') {
+        //   console.log('ack:' + value, new Date().toISOString());
+        // } 
+        else if (type === 'broadcast') {
+          console.log('baordcast', value);
         }
       };
       socket.onerror = (err) => {
@@ -69,31 +74,50 @@ export default function App() {
         <ul>
           {messages.map((m, index) => {
             return (
-              <li key={index}>{m}</li>
+              <li key={index}>
+                <MessageItem message={m} />
+              </li>
             );
           })}
         </ul>
       </div>
       <div className="input-box" >
         <input
+          placeholder="Enter a message"
           type="text"
+          onKeyDown={(e) => {
+            if (e.keyCode === 13) {
+              e.preventDefault();
+              socket.send(JSON.stringify({ type: 'message', value: text }));
+              setText('');
+            }
+          }}
           value={text}
           onChange={(e) => {
             setText(e.target.value);
           }}
         />
-        <button
+        {/* <button
           onClick={() => {
             if (!socket) {
               socketConnect();
             }
-            socket.send(text);
+            socket.send(JSON.stringify({ type: 'message', value: text }));
           }}
-        >send</button>
+        >send</button> */}
 
       </div>
 
+    </div>
+  );
+}
 
+const MessageItem = ({ message }) => {
+
+  return (
+    <div className="message-item">
+      <div className="avitar"></div>
+      <div className="message-body">{message}</div>
     </div>
   );
 }

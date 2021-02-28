@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap');
+
+body {
+	font-family: 'Red hat Display', sans-serif;	
+}
+
+.container {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	margin: 0 auto 0 auto;
+	min-height: 100vh;	
+}
+
+.contacts {
+	display: inline-flex;
+	left: 0;	
+	width: 24rem;
+	// height: 14rem;
+	padding: 1rem 2rem 1rem 1rem;
+	// box-sizing: border-box;
+	border-radius: 1rem 0 0 1rem;	
+	cursor: pointer;	
+	background: white;
+	box-shadow: 
+		0 0 8rem 0 rgba(black, 0.1),
+		2rem 2rem 4rem -3rem rgba(black, 0.5);	
+	transition: transform 500ms;
+	&:hover {
+		transform: translate(-3rem);
+	}
+	.pic {	
+		display: flex;
+		flex-basis: 280px;
+		width: 4rem;
+		height: 4rem;
+		background-size: cover;
+		background-position: center;
+		border-radius: 50%;
+	}
+	.pic.Einstein { background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg')}
+
+	.desc {
+		display: flex;
+		flex-grow: 1;
+		flex-basis: auto;
+		padding-left: 10px;
+	}
+}

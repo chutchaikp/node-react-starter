@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap');
+ 
+body {
+	font-family: 'Red hat Display', sans-serif; 
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.top3 {
+	display: flex;
+	flex-direction: row;
+	.item {
+		position: relative;
+		margin: 10px;
+		width: 9rem;
+		// height: 10rem;
+		cursor: pointer;
+		padding-bottom: 1rem;
+		border-radius: 0.5rem;		
+		box-shadow: 
+			0 0 4rem 0 rgba(black, 0.1),
+			0 1rem 2rem -1rem rgba(black, 0.3);
+		transform-origin: bottom;
+		transition: transform 300ms ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		.pic {
+			position: absolute;
+			width: 4rem;
+			height: 5rem;			
+			left: 50%;
+			margin-left: -2rem;
+			top: -1.5rem;
+			border-radius: 50%;
+			box-shadow: 
+			0 0 1rem 0 rgba(black, 0.2),
+			0 1rem 1rem -0.5rem rgba(black, 0.3);
+
+			&.one {
+				background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/58/CheHigh.jpg");
+				background-position: center;
+    		background-size: contain;
+			}
+			&.two {
+				background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d4/Karl_Marx_001.jpg");
+				background-position: center;
+    		background-size: contain;
+			}
+			&.three {
+				background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2c/Chit.jpg");
+				background-position: center;
+    		background-size: contain;
+			}
+			&.four {
+				background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Fidel_Castro_-_MATS_Terminal_Washington_1959.jpg");
+				background-position: center;
+    		background-size: contain;
+			}
+		}
+
+		.name{
+			font-weight: 600;
+			font-size: 18px;
+			margin: 70px 0 0 0;
+			text-align: center;
+		}
+		.desc{
+			font-weight: 300;
+			font-size: 11px;
+			text-align: center;
+		}
+	}
+}
+

@@ -1,0 +1,72 @@
+body { margin: 0}
+
+.party.room {
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+[class|="confetti"] {
+  position: absolute;
+}
+
+$colors: (#E2574F, #80C8BD, #F8B64A, #4BB4E0, #23AD7B);
+
+@for $i from 0 through 75 {
+  $w: random(16);
+  $l: random(100);
+	$r: random();
+  .confetti-#{$i} {
+    width: #{$w}px;
+    height:#{$w*0.5}px;
+    background-color: nth($colors, random(5));
+    top: -10%;
+    left: -010%;
+    opacity: random() + 0.5;
+    transform: rotate(#{random()*360}deg);
+		animation: drop-#{$i} unquote(5+random()+"s") 1.8s infinite;
+		animation-timing-function: ease-in-out;
+  }
+
+  @keyframes drop-#{$i} {
+		0% {
+			top: 40%;
+		}
+		20% {
+			top: unquote(50-50*$r+"%");
+		}
+		100% {
+			top: unquote(160-50*$r+"%");
+      left: unquote($l+random(50)+"%");
+    }
+  }
+}
+
+@for $i from 76 through 150 {
+  $w: random(16);
+  $l: random(100);
+	$r: random();
+  .confetti-#{$i} {
+    width: #{$w}px;
+    height:#{$w*0.5}px;
+    background-color: nth($colors, random(5));
+    top: -10%;
+    right: -10%;
+    opacity: random() + 0.5;
+    transform: rotate(#{random()*360}deg);
+		animation: drop-#{$i} unquote(5+random()+"s") 2.2s infinite;
+		animation-timing-function: ease-in-out;
+  }
+
+  @keyframes drop-#{$i} {
+		0% {
+			top: 40%;
+		}
+		20% {
+			top: unquote(50-50*$r+"%");
+		}
+		100% {
+			top: unquote(160-50*$r+"%");
+      right: unquote($l+random(50)+"%");
+    }
+  }
+}
